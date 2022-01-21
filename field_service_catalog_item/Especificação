@@ -1,8 +1,11 @@
-Objetivo: 
-Formulário chamado "Field Service" (sc_cat_item);
+Especificação do formulário "Field Service" (sc_cat_item);
+
+Objetivo: formulário capaz de preencher automaticamente o telefone do solicitante resgatando o "phone" ou "mobile_phone" na tabela de usuários (sys_user). Além disso o formulário terá uma integração com a ViaCEP API (https://viacep.com.br/) para preencher automaticamente os campos do endereço com base no CEP.
 
 Composição:
 1) Variable Set: "VC: Informações do solicitante";
 2) Client Script no VS: "VC: Preencher telefone do solicitante" (client_script_preencher_telefone.js);
 3) Script Inlcude para o CS: "UserUtils" (script_include_user_utils.js);
-4) Flow (Flow Designer):
+4) Variable Set: "VC: Endereço";
+5) Client script na VS de endereço para validar somente números no CEP: "VC: Somente números "CEP"";
+
