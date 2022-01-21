@@ -64,7 +64,7 @@ var answer = response.responseXML.documentElement.getAttribute('answer');<br>
 answer ? g_form.setValue('telefone', answer) : g_form.setValue('telefone', 'Telefone não cadastrado na base. Insira.');<br>
 }<br>
 </i>
-
+<br>
 📄 <b>Documentação: https://docs.servicenow.com/bundle/rome-application-development/page/script/ajax/topic/p_AJAX.html</b>
 
  
