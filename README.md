@@ -3,6 +3,10 @@ Todos os update sets estão armazenados na pasta "./update_sets" (estão em form
 
 👨🏻‍💻 Minha instância de desenvolvimento: <i>https://dev96986.service-now.com/</i>
 
+<b>✅ CHECKLIST:</b>
+
+<b>📚 ESTUDOS:</b>
+
 ⚙️ <b>1 - GlideRecord</b>: GlideRecord é uma API server-side no qual pode ser utilizado em algumas funcionalidades da plataforma. Entre elas estão o Script Inlude (sys_script_include) (📄 https://docs.servicenow.com/bundle/rome-application-development/page/script/server-scripting/concept/c_ScriptIncludes.html). Com o GlideRecord podemos realizar buscas através de qualquer tabela da plataforma e realizar tanto ação em campos dessas tabelas, como também, podemos resgatar valores dessas tabelas pelo lado do servidor e guardá-las para fornecer ao client através de outras funcionalidades ServiceNow. Uma dessas é o GlideAjax.
 
 <b>Composição GlideRecord (em um script include):</b>

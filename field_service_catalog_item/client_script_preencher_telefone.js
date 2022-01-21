@@ -1,5 +1,6 @@
 /*
 Nome: "VC: Preencher telefone do solicitante"
+Tipo: onChange (telefone)
 URL: https://dev96986.service-now.com/nav_to.do?uri=%2Fcatalog_script_client.do%3Fsys_id%3Dac64562f070101101590f19d7c1ed0e6
 */
 
