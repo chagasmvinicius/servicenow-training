@@ -5,16 +5,17 @@ URL: https://dev96986.service-now.com/nav_to.do?uri=%2Fcatalog_script_client.do%
 
 function onChange(control, oldValue, newValue, isLoading) {
     if (isLoading || newValue == '') {
+        g_form.clearValue('telefone');
         return;
     }
+
     var ga = new GlideAjax('UserUtils');
     ga.addParam('sysparm_name', 'getPhone'); //declarar o nome do método como parâmetro "sysparm_name" (parâmetro com nome fixo)
-    ga.addParam('sysparm_telefone', g_form.getValue('solicitante')); //declarar o valor que será enviado no parâmetro declarado no método "getPhone". Nesse caso é o "userSysId"
+    ga.addParam('sysparm_user', newValue); //declarar o valor que será enviado no parâmetro chamado no método "getPhone"
     ga.getXML(callback);
 
     function callback(response) {
         var answer = response.responseXML.documentElement.getAttribute('answer');
-        alert(answer);
-        answer != '' ? g_form.setValue('telefone', answer) : g_form.setValue('Telefone não cadastrado na base. Favor inserir aqui.');
+        answer ? g_form.setValue('telefone', answer) : g_form.setValue('telefone', 'Telefone não cadastrado na base. Insira.');
     }
 }

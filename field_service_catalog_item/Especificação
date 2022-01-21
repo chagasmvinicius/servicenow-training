@@ -4,5 +4,5 @@ Formulário chamado "Field Service" (sc_cat_item);
 Composição:
 1) Variable Set: "VC: Informações do solicitante";
 2) Client Script no VS: "VC: Preencher telefone do solicitante" (client_script_preencher_telefone.js);
-3) Script Inlcude para o CS: "UserUtils" (glide_record_user_utils);
+3) Script Inlcude para o CS: "UserUtils" (script_include_user_utils.js);
 4) Flow (Flow Designer):
