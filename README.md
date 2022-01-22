@@ -104,5 +104,29 @@ gs.info('Error try catch: ' + error);<br>
 </i>
 <br>
 📄 <b>Documentação: https://developer.servicenow.com/dev.do#!/reference/api/rome/server/c_RESTMessageV2API</b>
+<br>
+<br>
+⚙️ <b>4 - Script Step (Action -> Flow Designer)</b>: Nesse caso o script step servirá para atualizar a informação do status do ativo com busca pelo sys_id. Importante ressaltar que o script step é server-side
+<br>
+<br>
+<b>Composição Script Step:</b>
+<br>
+<br>
+<i>
+(function execute(inputs, outputs) {<br>
+var ativo = inputs.ativo;<br>
+var state = inputs.state;<br>
+var gr = new GlideRecord('alm_hardware');<br>
+gr.addQuery('sys_id', ativo);<br>
+gr.query();<br>
+while (gr.next()) {<br>
+//gr.setValue('install_status', '3');<br>
+gr.install_status = state;<br>
+gr.update();<br>
+}<br>
+})(inputs, outputs);<br>
+</i> 
+<br>
+📄 <b>Documentação: https://docs.servicenow.com/bundle/rome-servicenow-platform/page/administer/flow-designer/reference/javascript-step-action-designer.html</b>
 
  

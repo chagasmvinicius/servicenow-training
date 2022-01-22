@@ -1,9 +1,12 @@
-Especificação do formulário "Field Service" (sc_cat_item)
+Especificação do formulário "Field Service" (sc_cat_item):
 
 Objetivo: formulário capaz de preencher automaticamente o telefone do solicitante resgatando o "phone" ou "mobile_phone" na tabela de usuários (sys_user). 
 Além disso o formulário terá uma integração com a ViaCEP API (https://viacep.com.br/) para preencher automaticamente os campos do endereço com base no CEP. 
 O fluxo do formulário consistirá em encaminhar o chamado para o grupo de suporte contido no campo "Grupo de suporte". 
-A lógida de preenchimento desse campo foi feita em um client script com switch case.
+A lógica de preenchimento desse campo foi feita em um client script com switch case.
+
+Sobre o fluxo, a RITM é aberta para o grupo de suporte específico e atualiza automaticamente o install_status do
+ativo selecionado para "Em manutenção", após a data agendada, atualiza o status para "Em estoque".
 
 =========================================== RECURSOS TÉCNICOS ===========================================
 |_______________________________________________________________________________________________________|
@@ -14,3 +17,4 @@ A lógida de preenchimento desse campo foi feita em um client script com switch 
 | [Client Script] Regra somente números no campo CEP        |  ./client_script_somente_num_cep.js       |
 | [Script Include] "ViaCepIntegration" com RESTMessageV2    |  ./script_include_viacep.js               |
 | [Client Script] Preenchimento do grupo de suporte         |  ./client_script_grupo_suporte.js         |
+| [Flow -> Action] "Update Hardware" atualiza registro      |  ./action_update_hardware.js              |
