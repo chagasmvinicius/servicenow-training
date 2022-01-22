@@ -49,7 +49,8 @@ return response;<br>
 </i>
 <br>
 <b>
-Atenção: para utilizar os métodos .getParameter(), .get(), .setValue() e outros dentro do script include é necessário declarar que este é uma função/classe filha da classe/script include "AbstractAjaxProcessor" (👨🏻‍💻 https://dev96986.service-now.com/sys_script_include.do?sys_id=d65f78c40a0a0b6900196656f35913d3). Para fazer isso é necessário comentar ou apagar as linhas de código "type: Name" (ao final do script), "initialize: function() {}," (ao início do script) e inserir um extends na segunda linha. Deve ficar assim:<br>
+Atenção: para utilizar os métodos .getParameter(), .get(), .setValue() e outros dentro do script include é necessário declarar que este é uma função/classe filha da classe/script include "AbstractAjaxProcessor" (👨🏻‍💻 https://dev96986.service-now.com/sys_script_include.do?sys_id=d65f78c40a0a0b6900196656f35913d3). Para fazer isso é necessário comentar ou apagar as linhas de código "type: Name" (ao final do script), "initialize: function() {}," (ao início do script) e inserir um extends na segunda linha. Deve ficar assim:</b>
+<br>
 <i>
 Name.prototype = Object.extendsObject(global.AbstractAjaxProcessor, { ...método:{} });
 </i>
