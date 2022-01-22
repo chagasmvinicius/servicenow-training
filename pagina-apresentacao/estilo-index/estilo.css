@@ -1,13 +1,30 @@
 * {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #84b7a4;
-    display: flexbox;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #d3e9ef;
+    color: #233a3a;
 }
 
 .video {
     margin: 1%;
 }
 
-ul:hover {
+span, div, h2 {
+    background-color: #81b5a1;
+}
+
+#exercicios:hover {
    text-decoration: underline;
+}
+
+.container{ 
+    font-size: 14px;
+    background-color: #81b5a1;
+    
+    border-radius: 1em;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
