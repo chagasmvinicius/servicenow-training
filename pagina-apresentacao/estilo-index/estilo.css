@@ -12,14 +12,14 @@ span, div, h2 {
     background-color: #81b5a1;
 }
 
-#exercicios:hover {
-   text-decoration: underline;
+#ic_field_service:hover {
+    padding-left: 10px;
+    color: crimson;
 }
 
 .container{ 
     font-size: 14px;
     background-color: #81b5a1;
-    
     border-radius: 1em;
     padding: 1em;
     position: absolute;
