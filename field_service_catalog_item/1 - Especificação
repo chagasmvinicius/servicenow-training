@@ -1,12 +1,16 @@
-Especificação do formulário "Field Service" (sc_cat_item);
+Especificação do formulário "Field Service" (sc_cat_item)
 
-Objetivo: formulário capaz de preencher automaticamente o telefone do solicitante resgatando o "phone" ou "mobile_phone" na tabela de usuários (sys_user). Além disso o formulário terá uma integração com a ViaCEP API (https://viacep.com.br/) para preencher automaticamente os campos do endereço com base no CEP.
+Objetivo: formulário capaz de preencher automaticamente o telefone do solicitante resgatando o "phone" ou "mobile_phone" na tabela de usuários (sys_user). 
+Além disso o formulário terá uma integração com a ViaCEP API (https://viacep.com.br/) para preencher automaticamente os campos do endereço com base no CEP. 
+O fluxo do formulário consistirá em encaminhar o chamado para o grupo de suporte contido no campo "Grupo de suporte". 
+A lógida de preenchimento desse campo foi feita em um client script com switch case.
 
-Composição:
-1) Variable Set: "VC: Informações do solicitante";
-2) Client Script no VS: "VC: Preencher telefone do solicitante" (client_script_preencher_telefone.js);
-3) Script Inlcude para o CS: "UserUtils" (script_include_user_utils.js);
-4) Variable Set: "VC: Endereço";
-5) Client script na VS de endereço para validar somente números no CEP: "VC: Somente números "CEP" (client_script_somente_num_cep.js);
-6) Script Inlcude ViaCepIntegrtion: "ViaCepIntegration" (script_include_viacep);
-
+=========================================== RECURSOS TÉCNICOS ===========================================
+|_______________________________________________________________________________________________________|
+|                         Recurso                           |                    Arquivo                |
+˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+| [Client Script] Preenchimento automático dados do usuário |  ./client_script_preencher_telefone.js    |
+| [Script Include] "UserUtils", contém métodos GlideRecord  |  ./script_include_user_utils.js           |
+| [Client Script] Regra somente números no campo CEP        |  ./client_script_somente_num_cep.js       |
+| [Script Include] "ViaCepIntegration" com RESTMessageV2    |  ./script_include_viacep.js               |
+| [Client Script] Preenchimento do grupo de suporte         |  ./client_script_grupo_suporte.js         |

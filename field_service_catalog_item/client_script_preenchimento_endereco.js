@@ -18,7 +18,13 @@ function onChange(control, oldValue, newValue, isLoading) {
 
     function callbackRua(response) {
         var rua = response.responseXML.documentElement.getAttribute('answer');
-        g_form.setValue('logradouro', rua);
+        if (rua) {
+            g_form.setValue('logradouro', rua);
+            g_form.showFieldMsg('cep', 'O CEP é válido.', 'info');
+        } else {
+            g_form.clearValue('cep');
+            g_form.showFieldMsg('cep', 'O CEP é inválido.', 'error');
+        }
     }
 
     /* Preencimento do bairro */
@@ -31,6 +37,7 @@ function onChange(control, oldValue, newValue, isLoading) {
     function callbackBairro(response) {
         var bairro = response.responseXML.documentElement.getAttribute('answer');
         g_form.setValue('bairro', bairro);
+
     }
 
     /* Preencimento da cidade */

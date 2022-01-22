@@ -5,7 +5,7 @@ URL: https://dev96986.service-now.com/nav_to.do?uri=%2Fcatalog_script_client.do%
 */
 
 function onChange(control, oldValue, newValue, isLoading) {
-    if (isLoading || newValue == '') {
+    if (newValue == '') {
         g_form.clearValue('telefone');
         return;
     }

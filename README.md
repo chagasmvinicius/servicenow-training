@@ -1,9 +1,11 @@
-<b>Todos os arquivos desse repositório apenas são executados em instâncias ServiceNow. Este repositório foi criado apenas para armazenar o conteúdo do treinamento de Javascript em plataformas ServiceNow e servir como repositório do meu aprendizado, da minha evolução.
+<b>Todos os arquivos deste repositório apenas são executados em instâncias ServiceNow. Este repositório foi criado apenas para armazenar o conteúdo do treinamento de Javascript em plataformas ServiceNow e servir como repositório do meu aprendizado, da minha evolução.
 Todos os update sets estão armazenados na pasta "./update_sets" (estão em formato "xml" e foram feitos na aplicação "Global").</b>
 
 👨🏻‍💻 Minha instância de desenvolvimento: <i>https://dev96986.service-now.com/</i>
 
-<b>✅ CHECKLIST:</b>
+<b>✅ EXERCÍCIOS:</b>
+Board do projeto: https://github.com/chagasmvinicius/servicenow-training/projects/1
+Vídeos ilustrativos dos exercícios: https://chagasmvinicius.github.io/servicenow-training/
 
 <b>📚 ESTUDOS:</b>
 
@@ -70,5 +72,33 @@ answer ? g_form.setValue('telefone', answer) : g_form.setValue('telefone', 'Tele
 </i>
 <br>
 📄 <b>Documentação: https://docs.servicenow.com/bundle/rome-application-development/page/script/ajax/topic/p_AJAX.html</b>
+
+⚙️ <b>3 - RESTMessageV2</b>: RESTMessageV2 serve para estabelecer conexão com APIs ou servidores através do protocolo HTTP e REST. Podemos utilizar qualquer método HTTP (GET, POST, PUT, DELETE) para realizar as conexões. Importante ressaltar que essa API só pode ser chamada via server-side.
+
+<b>Composição RESTMessageV2:</b>
+
+<i>
+try {<br>
+var baseUrl = 'https://viacep.com.br/ws/';<br>
+var cep = this.getParameter('sysparm_cep');<br>
+var response, httpResponseStatus, body;<br>
+var request = new sn_ws.RESTMessageV2();<br>
+request.setHttpMethod('get');<br>
+request.setEndpoint(baseUrl + cep + '/json');<br>
+response = request.execute();<br>
+httpResponseStatus = response.getStatusCode();<br>
+body = JSON.parse(response.getBody());<br>
+if (httpResponseStatus == 200) {<br>
+gs.info('Execution global.ViaCepIntegration:\nStatus: ' + httpResponseStatus + '\nBody: ' + body.logradouro);<br>
+return body.logradouro;<br>
+}<br>
+} catch (e) {<br>
+var error = e.getMessage();<br>
+gs.info('Error try catch: ' + error);<br>
+}<br>
+}<br>
+</i>
+
+📄 <b>Documentação: https://developer.servicenow.com/dev.do#!/reference/api/rome/server/c_RESTMessageV2API</b>
 
  
