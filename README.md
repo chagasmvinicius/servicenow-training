@@ -4,7 +4,7 @@ Todos os update sets estão armazenados na pasta "./update_sets" (estão em form
 👨🏻‍💻 Minha instância de desenvolvimento: <i>https://dev96986.service-now.com/</i>
 
 <b>✅ EXERCÍCIOS:</b>
-<br>
+<br><br>
 Board do projeto: https://github.com/chagasmvinicius/servicenow-training/projects/1<br>
 Vídeos ilustrativos dos exercícios: https://chagasmvinicius.github.io/servicenow-training/
 
@@ -73,6 +73,7 @@ answer ? g_form.setValue('telefone', answer) : g_form.setValue('telefone', 'Tele
 </i>
 <br>
 📄 <b>Documentação: https://docs.servicenow.com/bundle/rome-application-development/page/script/ajax/topic/p_AJAX.html</b>
+<br>
 <br>
 ⚙️ <b>3 - RESTMessageV2</b>: RESTMessageV2 serve para estabelecer conexão com APIs ou servidores através do protocolo HTTP e REST. Podemos utilizar qualquer método HTTP (GET, POST, PUT, DELETE) para realizar as conexões. Importante ressaltar que essa API só pode ser chamada via server-side.
 
