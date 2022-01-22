@@ -56,7 +56,7 @@ Name.prototype = Object.extendsObject(global.AbstractAjaxProcessor, { ...método
 </i>
 </b>
 
-📄 <b>Documentação: https://docs.servicenow.com/bundle/rome-application-development/page/script/server-scripting/concept/c_UsingGlideRecordToQueryTables.html<b>
+📄 <b>Documentação: https://docs.servicenow.com/bundle/rome-application-development/page/script/server-scripting/concept/c_UsingGlideRecordToQueryTables.html</b>
 
 ⚙️ <b>2 - GlideAjax</b>: GlideAjax é uma API client-side que pode ser usada para resgatar valores obtidos pelo server-side. Muita das vezes o GlideAjax é utilizado em client scripts referenciando a métodos de um GlideRecord.
 
