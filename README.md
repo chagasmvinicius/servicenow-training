@@ -77,8 +77,10 @@ answer ? g_form.setValue('telefone', answer) : g_form.setValue('telefone', 'Tele
 <br>
 ⚙️ <b>3 - RESTMessageV2</b>: RESTMessageV2 serve para estabelecer conexão com APIs ou servidores através do protocolo HTTP e REST. Podemos utilizar qualquer método HTTP (GET, POST, PUT, DELETE) para realizar as conexões. Importante ressaltar que essa API só pode ser chamada via server-side.
 <br>
+<br>
 <b>Composição RESTMessageV2:</b>
-
+<br>
+<br>
 <i>
 try {<br>
 var baseUrl = 'https://viacep.com.br/ws/';<br>
