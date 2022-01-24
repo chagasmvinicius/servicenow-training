@@ -1,0 +1,33 @@
+Especificação da SCRIPTED REST API "FieldServiceProtocols":
+
+Link SN: https://dev96986.service-now.com/nav_to.do?uri=%2Fsys_ws_definition.do%3Fsys_id%3Dfc17109c071541101590f19d7c1ed0b4
+
+Objetivo: 
+Criação da API "FieldServiceProtocols" que disponibiliza, através do método HTTP "GET", uma lista
+com todas as RITMs criadas na tabela "sc_req_item" para o item de catálogo "Field Service".
+Pelo método GET também será possível adicionar um Query Parameter com um número de protocolo RITM e a API
+retornará apenas este chamado na lista.
+Já com o método POST é possível criar uma nova RITM para este mesmo formulário incluindo o valor das
+variáveis no body da requisição HTTP.
+Obs.: os dois scripts include servem para puxar as informações sobre os grupos e usuários das RITMs.
+
+Utilização:
+
+1) 🔎 Método GET (Consulta de RITMs):
+
+Autenticação: Basic Auth (username/password) da instância ServiceNow
+Endpoint: https://dev96986.service-now.com/api/693353/field_service_protocols
+Query Parameter (ritm_number): https://dev96986.service-now.com/api/693353/field_service_protocols?ritm_number=RITM0010009
+
+2) 💾 Método POST (Criação de nova RITM):
+
+Em desenvolvimento...
+
+
+=========================================== RECURSOS TÉCNICOS ===========================================
+|_______________________________________________________________________________________________________|
+|                         Recurso                           |                    Arquivo                |
+˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+| [Script Include] "UserUtils" c/ método getName(sys_id)    |  ./script_include_users_utils_v2.js       |
+| [Script Include] "GroupUtils"                             |  ./script_include_group_utils.js          |
+| [Scripted REST Ressource] Consulta de RITMs (GET)         |  ./scripted_rest_ressource_get.js         |

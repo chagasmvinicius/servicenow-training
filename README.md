@@ -129,5 +129,17 @@ gr.update();<br>
 </i> 
 <br>
 📄 <b>Documentação: https://docs.servicenow.com/bundle/rome-servicenow-platform/page/administer/flow-designer/reference/javascript-step-action-designer.html</b>
-
+<br>
+<br>
+⚙️ <b>5 - Scripted REST API (sys_ws_definition)</b>: Essa funcionalidade nos possibilita criar uma REST API com possibilidade de introduzir todos os métodos HTTP (GET, POST, DELETE, PUT/PATCH) para consultar, alterar, deletar ou criar registros em qualquer tabela da instância. Importante ressaltar que o scripted rest api é um funcionalidade server-side.
+<br>
+<br>
+<b>Composição Scripted REST API:</b>
+<br>
+<br>
+<b>↳ Scripted REST Ressource (sys_ws_operation)</b>: Criação dos métodos (GET, POST, etc...) e seus scripts de execução;
+<br>
+<b>↳ Scripted REST Query Parameters/Query Parameter Associations</b>: Criação de um ou mais parâmetros para serem acoplados na consulta(GET);
+<br>
+📄 <b>Documentação: https://docs.servicenow.com/bundle/rome-application-development/page/integrate/custom-web-services/concept/c_CustomWebServices.html</b>
  
