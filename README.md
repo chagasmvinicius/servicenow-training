@@ -139,7 +139,7 @@ gr.update();<br>
 <br>
 <b>↳ Scripted REST Ressource (sys_ws_operation)</b>: Criação dos métodos (GET, POST, etc...) e seus scripts de execução;
 <br>
-<b>↳ Scripted REST Query Parameters/Query Parameter Associations</b>: Criação de um ou mais parâmetros para serem acoplados na consulta(GET);
+<b>↳ Scripted REST Query Parameters/Query Parameter Associations</b>: Criação de um ou mais parâmetros para serem acoplados na consulta (GET);
 <br>
 <br>
 📄 <b>Documentação: https://docs.servicenow.com/bundle/rome-application-development/page/integrate/custom-web-services/concept/c_CustomWebServices.html</b>

@@ -31,3 +31,4 @@ Em desenvolvimento...
 | [Script Include] "UserUtils" c/ método getName(sys_id)    |  ./script_include_users_utils_v2.js       |
 | [Script Include] "GroupUtils"                             |  ./script_include_group_utils.js          |
 | [Scripted REST Ressource] Consulta de RITMs (GET)         |  ./scripted_rest_ressource_get.js         |
+| [Scripted REST Ressource] Criação de nova RITM (POST)     |  ./scripted_rest_ressource_get.js         |
