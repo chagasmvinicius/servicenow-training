@@ -141,5 +141,6 @@ gr.update();<br>
 <br>
 <b>↳ Scripted REST Query Parameters/Query Parameter Associations</b>: Criação de um ou mais parâmetros para serem acoplados na consulta(GET);
 <br>
+<br>
 📄 <b>Documentação: https://docs.servicenow.com/bundle/rome-application-development/page/integrate/custom-web-services/concept/c_CustomWebServices.html</b>
  
