@@ -6,9 +6,9 @@ URL: https://dev96986.service-now.com/sys_script_include.do?sys_id=84dea1e407158
 var GroupUtils = Class.create();
 GroupUtils.prototype = Object.extendsObject(AbstractAjaxProcessor, {
 
-    /* Exemplo de chamada: var example = new global.GroupUtils().getName(sys_id_grupo) */
+    /* Exemplo de chamada: var example = new global.GroupUtils().getGroupName(sys_id_grupo) */
 
-    getName: function (sys_id) {
+    getGroupName: function (sys_id) {
         var name;
         var grGroup = new GlideRecord('sys_user_group');
         grGroup.addQuery('sys_id', sys_id);
