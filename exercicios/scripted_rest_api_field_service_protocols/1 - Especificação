@@ -21,8 +21,27 @@ Query Parameter (ritm_number): https://dev96986.service-now.com/api/693353/field
 
 2) 💾 Método POST (Criação de nova RITM):
 
-Em desenvolvimento...
+Autenticação: Basic Auth (username/password) da instância ServiceNow
+Endpoint: https://dev96986.service-now.com/api/693353/field_service_protocols/create-new
+Body: 
+{
+    "solicitante": "6816f79cc0a8016401c5a33be04be441",
+    "cep": "24240210",
+    "logradouro": "Rua Vereador Duque Estrada",
+    "bairro": "Santa Rosa",
+    "cidade": "Niterói",
+    "estado": "RJ",
+    "numero": "88",
+    "complemento": "123",
+    "ativo": "00a96c0d3790200044e0bfc8bcbe5dc3",
+    "data_hora_fim_manutencao": "24/01/2022 20: 30: 15"
+}
+Obs.: o body só contém as variáveis do item de catálogo.
 
+Para criar essa API foi utilizado como base os métodos da API default "CartJS" (https://developer.servicenow.com/print_page.do?release=paris&category=null&identifier=c_CartJSScoped&module=api).
+Os métodos utilizados foram:
+I - addToCart(), para adicionar ao carrinho o item de catálogo selecionado (Field Service);
+II - checkoutCart() para dar checkout instantaneamente em todos as REQs que estão no carrinho do usuário logado via API. 
 
 =========================================== RECURSOS TÉCNICOS ===========================================
 |_______________________________________________________________________________________________________|
@@ -32,3 +51,4 @@ Em desenvolvimento...
 | [Script Include] "GroupUtils"                             |  ./script_include_group_utils.js          |
 | [Scripted REST Ressource] Consulta de RITMs (GET)         |  ./scripted_rest_ressource_get.js         |
 | [Scripted REST Ressource] Criação de nova RITM (POST)     |  ./scripted_rest_ressource_get.js         |
+˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
