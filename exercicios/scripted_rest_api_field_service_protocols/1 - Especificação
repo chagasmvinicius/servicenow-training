@@ -41,7 +41,7 @@ Obs.: o body só contém as variáveis do item de catálogo.
 Para criar essa API foi utilizado como base os métodos da API default "CartJS" (https://developer.servicenow.com/print_page.do?release=paris&category=null&identifier=c_CartJSScoped&module=api).
 Os métodos utilizados foram:
 I - addToCart(), para adicionar ao carrinho o item de catálogo selecionado (Field Service);
-II - checkoutCart() para dar checkout instantaneamente em todos as REQs que estão no carrinho do usuário logado via API. 
+II - submitOrder({}) para dar checkout instantaneamente na REQ que está no carrinho do usuário logado via API. 
 
 =========================================== RECURSOS TÉCNICOS ===========================================
 |_______________________________________________________________________________________________________|

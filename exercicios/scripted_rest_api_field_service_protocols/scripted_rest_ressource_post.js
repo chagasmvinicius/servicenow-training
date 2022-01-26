@@ -33,7 +33,8 @@ Documentação utilizada (API CartJS): https://developer.servicenow.com/print_pa
 
         var cart = new sn_sc.CartJS();
         var cartDetails = cart.addToCart(mapRequest);
-        var checkoutInfo = cart.checkoutCart();
+        //var checkoutInfo = cart.checkoutCart();
+		var checkoutInfo = cart.submitOrder({});
 
         response = {
             responseAddToCart: cartDetails,
@@ -41,6 +42,7 @@ Documentação utilizada (API CartJS): https://developer.servicenow.com/print_pa
         };
 
         return response;
+		
     } catch (e) {
         var error = e.getMessage();
         gs.info('Erro Scripted REST Resource FieldServiceProtocols: ' + error);
