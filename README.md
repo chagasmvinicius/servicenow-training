@@ -6,7 +6,6 @@ Todos os update sets estão armazenados na pasta "./update_sets" (estão em form
 <b>✅ EXERCÍCIOS:</b>
 <br><br>
 Board do projeto: https://github.com/chagasmvinicius/servicenow-training/projects/1<br>
-Vídeos ilustrativos dos exercícios: https://chagasmvinicius.github.io/servicenow-training/
 
 <b>📚 ESTUDOS:</b>
 
