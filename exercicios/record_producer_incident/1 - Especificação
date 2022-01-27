@@ -6,7 +6,7 @@ Objetivo:
 Record producer para criação de incidentes. Cada variável do RP insere o valor em um campo da tabela de incidentes e há um cálculo de prioridade do 
 incidente com base na criticidade da aplicação e criticidade do serviço selecionados pelo usuário. Para isso criei um script include que contém a função
 cálculo (script_include_incident_priority.js) e há duas chamadas para esse método. Um no próprio RP, com o intuito de gerar a criticidade assim que o incidente é gerado.
-A outra chamada é através de uma business rule (br_calculo_prioridade_onchange.js) que roda toda vez que os campos de aplicação (cmdb_ci) e serviço (business_service) mudar de valor,
+A outra chamada é através de uma business rule (br_calculo_prioridade_onchange.js) que roda toda vez que os campos de aplicação (cmdb_ci) ou serviço (business_service) mudar de valor,
 com isso, a prioridade é recalculada.
 
 =========================================== RECURSOS TÉCNICOS ===========================================

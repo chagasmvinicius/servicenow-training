@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2022-01-27 22:33:21">
+<sys_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<base_update_set display_value=""/>
+<completed_by display_value="Vinicius Chagas">6816f79cc0a8016401c5a33be04be441</completed_by>
+<completed_on>2022-01-27 22:33:11</completed_on>
+<description>-&gt; Record producer
+-&gt; Script include (cálculo da prioridade)
+-&gt; BR (chamada script include onChange)</description>
+<install_date/>
+<installed_from/>
+<is_default>false</is_default>
+<merged_to display_value=""/>
+<name>[26/01/22 - 09h17] record-producer-incident</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_sys_id display_value=""/>
+<state>complete</state>
+<sys_created_by>vimartin</sys_created_by>
+<sys_created_on>2022-01-26 12:17:22</sys_created_on>
+<sys_id>9d5c9759071101101590f19d7c1ed062</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_updated_by>vimartin</sys_updated_by>
+<sys_updated_on>2022-01-27 22:33:11</sys_updated_on>
+</sys_update_set>
+</unload>
