@@ -18,3 +18,4 @@ ativo selecionado para "Em manutenção", após a data agendada, atualiza o stat
 | [Script Include] "ViaCepIntegration" com RESTMessageV2    |  ./script_include_viacep.js               |
 | [Client Script] Preenchimento do grupo de suporte         |  ./client_script_grupo_suporte.js         |
 | [Flow -> Action] "Update Hardware" atualiza registro      |  ./action_update_hardware.js              |
+˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜

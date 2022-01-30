@@ -142,4 +142,14 @@ gr.update();<br>
 <br>
 <br>
 📄 <b>Documentação: https://docs.servicenow.com/bundle/rome-application-development/page/integrate/custom-web-services/concept/c_CustomWebServices.html</b>
+<br>
+<br>
+⚙️ <b>6 - Inbound E-mail Action (sysevent_in_email_action)</b>: Essa funcionalidade nos possibilita criar chamados em tabelas ou responder e-mails a partir de e-mails recebidos na caixa com base em algumas configurações e gatilhos (caixa: instance-name@service-now.com / devXXXXX@servicenowdevelopers.com)(tabela: sys_email). Para que a instância esteja habilitada a receber (gs.getProperty(glide.email.smtp.active)) e/ou enviar (gs.getProperty(glide.email.read.active)) e-mails é necessário acessar as propriedades de e-mail e habilitá-las. Segue o caminho: "System Properties > Email Properties (email_properties.do)".
+<br>
+<br>
+📄 <b>Documentação geral: https://developer.servicenow.com/dev.do#!/learn/learning-plans/quebec/new_to_servicenow/app_store_learnv2_automatingapps_quebec_exercise_inbound_email_configuration</b>
+<br>
+<br>
+📄 <b>Documentação da Lista de Variáveis do Objeto "email": https://docs.servicenow.com/bundle/rome-servicenow-platform/page/administer/notification/reference/r_AccessingEmailObjsWithVars.html</b>
+
  

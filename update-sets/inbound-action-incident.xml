@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2022-01-30 19:50:40">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>[29/01/22 - 08h30] inbound-action-incident </name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>502a617a07d901101590f19d7c1ed000</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>vimartin</sys_created_by>
+<sys_created_on>2022-01-30 19:50:39</sys_created_on>
+<sys_id>539ae57a07d901101590f19d7c1ed0ce</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>vimartin</sys_updated_by>
+<sys_updated_on>2022-01-30 19:50:39</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sysevent_in_email_action_ec7dfde6071101101590f19d7c1ed0c3</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_in_email_action"&gt;&lt;sysevent_in_email_action action="INSERT_OR_UPDATE"&gt;&lt;action&gt;record_action&lt;/action&gt;&lt;active&gt;true&lt;/active&gt;&lt;assignment_operator/&gt;&lt;condition_script/&gt;&lt;description/&gt;&lt;event_name&gt;email.read&lt;/event_name&gt;&lt;filter_condition table="sys_email"&gt;subject=Application Incident Inbound Action^EQ&lt;item endquery="false" field="subject" goto="false" newquery="false" operator="=" or="false" value="Application Incident Inbound Action"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;from display_value="Vinicius Chagas"&gt;6816f79cc0a8016401c5a33be04be441&lt;/from&gt;&lt;name&gt;Application Incident Inbound Action&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;reply_email/&gt;&lt;required_roles/&gt;&lt;script&gt;&lt;![CDATA[(function runAction( /*GlideRecord*/ current, /*GlideRecord*/ event, /*EmailWrapper*/ email, /*ScopedEmailLogger*/ logger, /*EmailClassifier*/ classifier) {
+
+
+    try {
+        var body = {
+            "sysparm_id": "b4e76dad079501101590f19d7c1ed035",
+            "variables": {
+                "solicitante": email.from_sys_id,
+                "cmdb_ci": setCmdbCi(email.body.cmdb_ci),
+                "business_service": setBusinessService(email.body.business_service),
+                "short_description": 'Incidentes criado a partir do e-mail ' + email.subject + ' às ' + gs.nowDateTime(),
+                "description": 'Incidentes criado a partir do e-mail ' + email.subject + ' às ' + gs.nowDateTime()
+            }
+        };
+
+        var recordProducer = new sn_sc.CatItem(body.sysparm_id);
+        var response = recordProducer.submitProducer(body);
+
+        gs.info('Application Incident Inbound Action RESPONSE: ' + JSON.stringify(response));
+
+    } catch (error) {
+        gs.info({
+            DateTime: gs.nowDateTime(),
+            Response: error
+        });
+    }
+
+    /* ========================================== Funções auxiliares ========================================== */
+
+    function setBusinessService(business_service) {
+        /*
+        Legenda (business_service: 1, 2, 3):
+        1 = 27d32778c0a8000b00db970eeaa60f16 (Email)
+        2 = 63036c18c0a8010e01bac272daed2e2c (Bond Trading - DR)
+        3 = c69b36ac73d423002728660c4cf6a71d (Slack)
+        */
+
+        var businessService = '';
+
+        switch (email.body.business_service) {
+            case '1':
+                businessService = '27d32778c0a8000b00db970eeaa60f16';
+                break;
+            case '2':
+                businessService = '63036c18c0a8010e01bac272daed2e2c';
+                break;
+            case '3':
+                businessService = 'c69b36ac73d423002728660c4cf6a71d';
+                break;
+            default:
+                businessService = '0e7a06157f10310016181ccebefa91ce';
+        }
+        return businessService;
+    }
+
+    function setCmdbCi(cmdb_ci) {
+        /*
+        Legenda (cmdb_ci: 1, 2, 3):
+        1 = c0cb61a107d501101590f19d7c1ed0dd (ViniciusApp-High)
+        2 = 10ebe1a107d501101590f19d7c1ed054 (ViniciusApp-Medium)
+        3 = 74fb25a107d501101590f19d7c1ed0d9 (ViniciusApp-Low)
+        */
+
+        var cmdbCi = '';
+
+        switch (email.body.cmdb_ci) {
+            case '1':
+                cmdbCi = 'c0cb61a107d501101590f19d7c1ed0dd';
+                break;
+            case '2':
+                cmdbCi = '10ebe1a107d501101590f19d7c1ed054';
+                break;
+            case '3':
+                cmdbCi = '74fb25a107d501101590f19d7c1ed0d9';
+                break;
+            default:
+                cmdbCi = '2a4dcaee071101101590f19d7c1ed075';
+        }
+        return cmdbCi;
+    }
+
+})(current, event, email, logger, classifier);]]&gt;&lt;/script&gt;&lt;stop_processing&gt;false&lt;/stop_processing&gt;&lt;sys_class_name&gt;sysevent_in_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;vimartin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-01-30 03:57:23&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ec7dfde6071101101590f19d7c1ed0c3&lt;/sys_id&gt;&lt;sys_mod_count&gt;32&lt;/sys_mod_count&gt;&lt;sys_name&gt;Application Incident Inbound Action&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_in_email_action_ec7dfde6071101101590f19d7c1ed0c3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;vimartin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-01-30 19:29:03&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;template/&gt;&lt;type&gt;new&lt;/type&gt;&lt;/sysevent_in_email_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1883004482</payload_hash>
+<remote_update_set display_value="[29/01/22 - 08h30] inbound-action-incident ">539ae57a07d901101590f19d7c1ed0ce</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>vimartin</sys_created_by>
+<sys_created_on>2022-01-30 19:50:39</sys_created_on>
+<sys_id>579ae57a07d901101590f19d7c1ed0ce</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17eac8941790000001</sys_recorded_at>
+<sys_updated_by>vimartin</sys_updated_by>
+<sys_updated_on>2022-01-30 19:50:39</sys_updated_on>
+<table>incident</table>
+<target_name>Application Incident Inbound Action</target_name>
+<type>Inbound Email Actions</type>
+<update_domain>global</update_domain>
+<update_guid>ed6a257a14d90110d02830822692ebe3</update_guid>
+<update_guid_history>ed6a257a14d90110d02830822692ebe3:-1883004482,b2a5adf28bd90110e0aad6264662c470:-1883004482,2fa4a9f20fd90110d89ce560d63c9045:1115095259,2513ed728bd9011091283a1e6bc7a767:1354054019,9de1617283d901102fa5f4a4ac23b641:549807628,3e7f19323dd901100117d24b141998e7:314746630,9dce5dbead990110eff502d44a555ffd:-410637598,bf3e5dbe3f9901105249e51f5363c7ed:1100976547,84ec553e5b9901104afda9a5c1badcb8:765134564,89ebdd3ec7990110043a4b1ab61129f4:-1533452901,0fab5dfaaa990110589f41c394f978f2:-433269618,d48a5dfa78990110457dab0505bbf3ec:403364200,736a553e4299011093f3caccf7cf6be2:500101980,f2295dba2d9901102810f8162aecda2c:1033007179,ee38d5ba3a99011010a600e90e8ec535:1000961410,68a7513a0a9901104fab424c3fde30e3:-118360826,f0c61d3aa499011081540ffbb3842e24:127319444,3d06117a029901109f0b21530cacdbef:606403978,f735553aa299011095455a221a34f1a3:1475505792,a534d9b6999901107903d55d9420faeb:-1823751912,2063d9b67499011044a989b358daf2dd:-531701558,3ae19576a7990110c9cd26024d36dc1e:-1463925874,18df49367499011066b02738afa3e709:-1732635892,53de0136fc9901104eeb02d7b02ee3a9:-1414579954,70be09326399011009a3461f359dfcc1:-1378739476,b38805fe9259011003df53352c96ebe9:-1361241018,5e46c9fa8059011061a1476724a25ad8:-1485925868,9b6301faeb5901105d0ed0f980a3d7b2:1434444910,0872c972cf55011066ed21d06d7126ae:399595681,09b0457a73590110f281e279b4971868:423731620,03e4deeacd510110e88ffb13cdbf55a9:258293304,c7e1de2a0a510110f7773d8af3670dfd:628388675,3181562a4d510110bfac1de518812d3e:-497128654,2f60162ab75101102d206909c65e0a0e:628388675</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
