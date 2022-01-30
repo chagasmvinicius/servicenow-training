@@ -1,4 +1,4 @@
-Especificação do formulário "Application Incident Inbound Action" (sysevent_in_email_action):
+Especificação do inbound email action "Application Incident Inbound Action" (sysevent_in_email_action):
 
 Objetivo: funcionalidade para abertura de incidentes de aplicações (Application Incident) via e-mail. O corpo de texto do e-mail deve conter:
 cmdb_ci: 1, 2 ou 3 e business_service: 1, 2 ou 3. Após enviado o e-mail para a caixa "dev96986@servicenowdevelopers.com", o incidente será criado

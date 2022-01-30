@@ -1,0 +1,9 @@
+Especificação da integração "Application Incident Inbound Action":
+
+Objetivo: Criação de posts em um canal de equipe no Teams exibindo que foi criado um novo incidente e exibindo os detalhes do mesmo.
+Para essa integração foi instalado o plugin do IntegrationHub e utilizado os WebHooks do Teams. 
+
+Documentações:
+[Teams] https://docs.microsoft.com/pt-br/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook
+[ServiceNow] ttps://docs.servicenow.com/bundle/rome-servicenow-platform/page/administer/integrationhub/reference/microsoft-teams-spoke.html
+

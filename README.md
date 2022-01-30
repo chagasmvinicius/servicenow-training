@@ -151,5 +151,11 @@ gr.update();<br>
 <br>
 <br>
 📄 <b>Documentação da Lista de Variáveis do Objeto "email": https://docs.servicenow.com/bundle/rome-servicenow-platform/page/administer/notification/reference/r_AccessingEmailObjsWithVars.html</b>
+<br>
+<br>
+⚙️ <b>7 - IntegrationHub - Teams</b>: Criação da integração via Flow Designer utilizando o plugin do IntegrationHub.
+<br>
+<br>
+📄 <b>Documentações</b>: https://docs.servicenow.com/bundle/rome-servicenow-platform/page/administer/integrationhub/reference/microsoft-teams-spoke.html / https://docs.microsoft.com/pt-br/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook
 
  
