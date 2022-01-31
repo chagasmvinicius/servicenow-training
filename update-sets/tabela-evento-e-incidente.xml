@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2022-01-31 21:31:49">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>[30/01/22 - 20h15] tabela-evento-e-incidente</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>43b8127e075d01101590f19d7c1ed0fa</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>vimartin</sys_created_by>
+<sys_created_on>2022-01-31 21:31:48</sys_created_on>
+<sys_id>f65b47c3071101101590f19d7c1ed094</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>vimartin</sys_updated_by>
+<sys_updated_on>2022-01-31 21:31:48</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_number_38695e32079d01101590f19d7c1ed017</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number"><sys_number action="INSERT_OR_UPDATE"><category display_value="" name="u_eventos">u_eventos</category><maximum_digits>7</maximum_digits><number>1000</number><prefix>EVT</prefix><sys_class_name>sys_number</sys_class_name><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:15:01</sys_created_on><sys_id>38695e32079d01101590f19d7c1ed017</sys_id><sys_mod_count>0</sys_mod_count><sys_name>EVT</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_number_38695e32079d01101590f19d7c1ed017</sys_update_name><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:15:01</sys_updated_on></sys_number></record_update>]]></payload>
+<payload_hash>-1393832840</payload_hash>
+<remote_update_set display_value="[30/01/22 - 20h15] tabela-evento-e-incidente">f65b47c3071101101590f19d7c1ed094</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>vimartin</sys_created_by>
+<sys_created_on>2022-01-31 21:31:48</sys_created_on>
+<sys_id>325b47c3071101101590f19d7c1ed096</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17ead45366c0000001</sys_recorded_at>
+<sys_updated_by>vimartin</sys_updated_by>
+<sys_updated_on>2022-01-31 21:31:48</sys_updated_on>
+<table/>
+<target_name>EVT</target_name>
+<type>Number</type>
+<update_domain>global</update_domain>
+<update_guid>70695e32679d011046561afb7364ae1d</update_guid>
+<update_guid_history>70695e32679d011046561afb7364ae1d:-1393832840</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_e0691e32079d01101590f19d7c1ed0fa</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="eventos">a0691afa075d01101590f19d7c1ed048</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>eventos</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_eventos</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:14:59</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e0691e32079d01101590f19d7c1ed0fa</sys_id><sys_mod_count>0</sys_mod_count><sys_name>eventos</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_module_e0691e32079d01101590f19d7c1ed0fa</sys_update_name><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:14:59</sys_updated_on><timeline_page/><title>eventos</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+<payload_hash>940999137</payload_hash>
+<remote_update_set display_value="[30/01/22 - 20h15] tabela-evento-e-incidente">f65b47c3071101101590f19d7c1ed094</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>vimartin</sys_created_by>
+<sys_created_on>2022-01-31 21:31:48</sys_created_on>
+<sys_id>365b47c3071101101590f19d7c1ed095</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17ead45313f0000001</sys_recorded_at>
+<sys_updated_by>vimartin</sys_updated_by>
+<sys_updated_on>2022-01-31 21:31:48</sys_updated_on>
+<table>u_eventos</table>
+<target_name>eventos</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_guid>ac691e32289d0110342b00fa7882c5fc</update_guid>
+<update_guid_history>ac691e32289d0110342b00fa7882c5fc:940999137</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_eventos__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="eventos" language="en" table="u_eventos"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>eventos</label><language>en</language><name>u_eventos</name><plural>eventos</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:15:00</sys_created_on><sys_id>b0695e32079d01101590f19d7c1ed008</sys_id><sys_mod_count>0</sys_mod_count><sys_name>eventos</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_eventos__en</sys_update_name><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:15:00</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1713863754</payload_hash>
+<remote_update_set display_value="[30/01/22 - 20h15] tabela-evento-e-incidente">f65b47c3071101101590f19d7c1ed094</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>vimartin</sys_created_by>
+<sys_created_on>2022-01-31 21:31:48</sys_created_on>
+<sys_id>7e5b47c3071101101590f19d7c1ed095</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17ead4535320000001</sys_recorded_at>
+<sys_updated_by>vimartin</sys_updated_by>
+<sys_updated_on>2022-01-31 21:31:48</sys_updated_on>
+<table>u_eventos</table>
+<target_name>eventos</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>f0695e32bd9d0110a1bec01ace8a6015</update_guid>
+<update_guid_history>f0695e32bd9d0110a1bec01ace8a6015:1713863754</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_9b1b5a32079d01101590f19d7c1ed043</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="9b1b5a32079d01101590f19d7c1ed043" sys_domain="global" table="u_eventos" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>0</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-31 00:48:18</sys_created_on><sys_id>e7bee2b207dd01101590f19d7c1ed00d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_eventos" sys_domain="global" view="Default view">9b1b5a32079d01101590f19d7c1ed043</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-31 00:48:18</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>cmdb_ci</element><position>1</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-31 00:48:18</sys_created_on><sys_id>6fbee2b207dd01101590f19d7c1ed00d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_eventos" sys_domain="global" view="Default view">9b1b5a32079d01101590f19d7c1ed043</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-31 00:48:18</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>state</element><position>2</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-31 00:48:18</sys_created_on><sys_id>efbee2b207dd01101590f19d7c1ed00d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_eventos" sys_domain="global" view="Default view">9b1b5a32079d01101590f19d7c1ed043</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-31 00:48:18</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>3</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-31 00:48:18</sys_created_on><sys_id>63bee2b207dd01101590f19d7c1ed00e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_eventos" sys_domain="global" view="Default view">9b1b5a32079d01101590f19d7c1ed043</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-31 00:48:18</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>urgency</element><position>4</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-31 00:48:18</sys_created_on><sys_id>e3bee2b207dd01101590f19d7c1ed00e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_eventos" sys_domain="global" view="Default view">9b1b5a32079d01101590f19d7c1ed043</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-31 00:48:18</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>impact</element><position>5</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-31 00:48:18</sys_created_on><sys_id>67bee2b207dd01101590f19d7c1ed00e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_eventos" sys_domain="global" view="Default view">9b1b5a32079d01101590f19d7c1ed043</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-31 00:48:18</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assignment_group</element><position>6</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-31 00:48:18</sys_created_on><sys_id>e7bee2b207dd01101590f19d7c1ed00e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_eventos" sys_domain="global" view="Default view">9b1b5a32079d01101590f19d7c1ed043</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-31 00:48:18</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assigned_to</element><position>7</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-31 00:48:18</sys_created_on><sys_id>6bbee2b207dd01101590f19d7c1ed00e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_eventos" sys_domain="global" view="Default view">9b1b5a32079d01101590f19d7c1ed043</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-31 00:48:18</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>8</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-31 00:48:18</sys_created_on><sys_id>ebbee2b207dd01101590f19d7c1ed00e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_eventos" sys_domain="global" view="Default view">9b1b5a32079d01101590f19d7c1ed043</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-31 00:48:18</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>short_description</element><position>9</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-31 00:48:18</sys_created_on><sys_id>6fbee2b207dd01101590f19d7c1ed00e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_eventos" sys_domain="global" view="Default view">9b1b5a32079d01101590f19d7c1ed043</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-31 00:48:18</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>description</element><position>10</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-31 00:48:18</sys_created_on><sys_id>efbee2b207dd01101590f19d7c1ed00e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_eventos" sys_domain="global" view="Default view">9b1b5a32079d01101590f19d7c1ed043</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-31 00:48:18</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>work_notes</element><position>11</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-31 00:48:18</sys_created_on><sys_id>2fbe6ab207dd01101590f19d7c1ed0e8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_eventos" sys_domain="global" view="Default view">9b1b5a32079d01101590f19d7c1ed043</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-31 00:48:18</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>close_notes</element><position>12</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-31 00:48:18</sys_created_on><sys_id>afbe6ab207dd01101590f19d7c1ed0e8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_eventos" sys_domain="global" view="Default view">9b1b5a32079d01101590f19d7c1ed043</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-31 00:48:18</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>u_eventos</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:22:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9b1b5a32079d01101590f19d7c1ed043</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_eventos</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_9b1b5a32079d01101590f19d7c1ed043</sys_update_name><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:22:33</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>707067617</payload_hash>
+<remote_update_set display_value="[30/01/22 - 20h15] tabela-evento-e-incidente">f65b47c3071101101590f19d7c1ed094</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>vimartin</sys_created_by>
+<sys_created_on>2022-01-31 21:31:48</sys_created_on>
+<sys_id>b65b47c3071101101590f19d7c1ed096</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17ead9a9f720000001</sys_recorded_at>
+<sys_updated_by>vimartin</sys_updated_by>
+<sys_updated_on>2022-01-31 21:31:48</sys_updated_on>
+<table>u_eventos</table>
+<target_name>eventos</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>6fbe6ab2a8dd01106e4d7fd4e5263bea</update_guid>
+<update_guid_history>6fbe6ab2a8dd01106e4d7fd4e5263bea:707067617,b7ced276019d011060baa1c1e8d1a53c:2142318685,75cb1ab2a79d01107305ac825677bf74:346817251,84bbdab2229d01105558e0c0873ade61:2066020522,ff9b9ab2449d01104ba6320ebec5c07c:-895871238,339b9ab2979d0110de2902adbe07e576:-1402311545</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_eventos_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="" extends="task" table="u_eventos"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Collection"&gt;collection&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_eventos&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;vimartin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-01-30 23:15:00&lt;/sys_created_on&gt;&lt;sys_id&gt;a8691e32079d01101590f19d7c1ed0fd&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_eventos&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_eventos_null&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;vimartin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-01-30 23:15:00&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>2025310053</payload_hash>
+<remote_update_set display_value="[30/01/22 - 20h15] tabela-evento-e-incidente">f65b47c3071101101590f19d7c1ed094</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>vimartin</sys_created_by>
+<sys_created_on>2022-01-31 21:31:48</sys_created_on>
+<sys_id>ba5b47c3071101101590f19d7c1ed095</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17ead4535030000001</sys_recorded_at>
+<sys_updated_by>vimartin</sys_updated_by>
+<sys_updated_on>2022-01-31 21:31:48</sys_updated_on>
+<table>u_eventos</table>
+<target_name>eventos</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>7c695e32139d011006933b65f4da7013</update_guid>
+<update_guid_history>7c695e32139d011006933b65f4da7013:2025310053</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_f90c12f2079d01101590f19d7c1ed01a</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;criar_incidente_evento&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;javascript: current.getValue('state') === '2'&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;hint/&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Criar incidente&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[var grInc = new GlideRecord('incident');
+
+/* Criar incidente com base nos dados do EVT */
+
+grInc.initialize();
+grInc.caller_id = gs.getUserID();
+grInc.category = 'hardware';
+grInc.cmdb_ci = current.cmdb_ci;
+grInc.short_description = current.short_description;
+grInc.description = current.description;
+grInc.impact = current.impact;
+grInc.urgency = current.urgency;
+grInc.assignment_group = current.assignment_group;
+grInc.parent = current.sys_id;
+var incSysId = grInc.insert();
+
+/* Buscar incidente recém criado e recolher valor do número do protocolo */
+
+if (incSysId) {
+    var incNumber = '';
+    grInc.addQuery('sys_id', incSysId);
+    grInc.setLimit(1);
+    grInc.query();
+    if (grInc.next()) {
+        incNumber = grInc.getValue('number');
+    }
+}
+
+/* Exibir mensagem de sucesso com link para o incidente recém criado */
+
+gs.addInfoMessage('Incidente criado com sucesso: ' + '&lt;a href=https://' + gs.getProperty('instance_name') + '.service-now.com/incident.do?sys_id=' + incSysId + ' target = _blank&gt;' + incNumber + '&lt;/a&gt;');
+gs.info('Incidente criado através do ' + current.number + '\n' + JSON.stringify({incNumber: incNumber, incSysId: incSysId}));]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;vimartin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-01-30 23:29:33&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f90c12f2079d01101590f19d7c1ed01a&lt;/sys_id&gt;&lt;sys_mod_count&gt;28&lt;/sys_mod_count&gt;&lt;sys_name&gt;Criar incidente&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_f90c12f2079d01101590f19d7c1ed01a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;vimartin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-01-31 01:05:29&lt;/sys_updated_on&gt;&lt;table&gt;u_eventos&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>616374634</payload_hash>
+<remote_update_set display_value="[30/01/22 - 20h15] tabela-evento-e-incidente">f65b47c3071101101590f19d7c1ed094</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>vimartin</sys_created_by>
+<sys_created_on>2022-01-31 21:31:48</sys_created_on>
+<sys_id>f25b47c3071101101590f19d7c1ed096</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17eadaa59340000001</sys_recorded_at>
+<sys_updated_by>vimartin</sys_updated_by>
+<sys_updated_on>2022-01-31 21:31:48</sys_updated_on>
+<table>u_eventos</table>
+<target_name>Criar incidente</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>cfa23e7676dd0110f917b75b5e7f14d1</update_guid>
+<update_guid_history>cfa23e7676dd0110f917b75b5e7f14d1:616374634,df1276765ddd01102dff9b4fed8a57b2:-1698601493,db41f63699dd0110bd9c7f49b9770eb8:1125493715,1a90f6f236dd011090f944cbbd74a79a:1963515787,67ff6af2e0dd01105d8068dff5f4289f:-1016363626,c88feeb2b0dd01108884573fff65582d:-185443642,820f6e72a2dd0110a9465ff44eae98ff:1649026830,bf1e2e7207dd01106f1c91f882287479:-935723804,87cde23281dd0110ca6f74fd2945a452:682586020,cbdb22320ddd0110fb7cfb40787a4690:1427100445,e46b6afe2d9d0110855aaa1ad114dfb9:938732542,c97aa2bea19d0110af18353a9d19391f:-1032846440,b04a6e7e039d01105ca6c6307d008857:2064476464,0c1a22be059d011002f580b991bc191b:1114928975,92396e7e6d9d0110cae41746c4cfad4c:1385078140,6e292e3eaf9d01102acbc6792540e7e5:-1182763268,e519ea3e639d0110b15839744ec37026:1713769538,abd76ebac29d0110e28cfcda0c746e9d:1096298830,5757663ea89d0110ee5a01b37a9ea3a4:-510379538,20962efaa99d0110ae24684b968b3d1c:1096298830,9355eabadc9d0110acccdbfb723d934e:-1441762276,65842a3aa29d01108ecf3f33dc7913d4:2014593985,c9b22a3aae9d011056b1ee978dc420ff:-1682369601,6a11e2f6479d011049e5b5d55df9c9c4:993858528,3faf5ef2289d01101b15ba5e7fdcf723:1369330124,21fe1ef28f9d0110803b392601032122:1072310207,37ec1ef2739d0110fda38cc646d23a1a:661709336,8edc9eb2ad9d0110b32f9dd8a8e9602b:792170542,f9bc16b2ca9d0110d3472d5810990d47:1588057339</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_bf1d96e3c0a801640190725e63f8ac80</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="bf1d96e3c0a801640190725e63f8ac80" sys_domain="global" table="incident" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>0</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>e76f5e76079d01101590f19d7c1ed084</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>parent</element><position>1</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>6b6f5e76079d01101590f19d7c1ed084</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>caller_id</element><position>2</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>eb6f5e76079d01101590f19d7c1ed084</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>category</element><position>3</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>6f6f5e76079d01101590f19d7c1ed084</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>subcategory</element><position>4</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>ef6f5e76079d01101590f19d7c1ed084</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>business_service</element><position>5</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>636f5e76079d01101590f19d7c1ed085</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>service_offering</element><position>6</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>e36f5e76079d01101590f19d7c1ed085</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>cmdb_ci</element><position>7</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>676f5e76079d01101590f19d7c1ed085</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>universal_request</element><position>8</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>e76f5e76079d01101590f19d7c1ed085</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>route_reason</element><position>9</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>6b6f5e76079d01101590f19d7c1ed085</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>10</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>eb6f5e76079d01101590f19d7c1ed085</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>contact_type</element><position>11</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>6f6f5e76079d01101590f19d7c1ed085</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>state</element><position>12</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>ef6f5e76079d01101590f19d7c1ed085</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>hold_reason</element><position>13</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>636f5e76079d01101590f19d7c1ed086</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>impact</element><position>14</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>e36f5e76079d01101590f19d7c1ed086</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>urgency</element><position>15</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>676f5e76079d01101590f19d7c1ed086</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>priority</element><position>16</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>e76f5e76079d01101590f19d7c1ed086</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assignment_group</element><position>17</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>6b6f5e76079d01101590f19d7c1ed086</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assigned_to</element><position>18</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>eb6f5e76079d01101590f19d7c1ed086</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>19</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>6f6f5e76079d01101590f19d7c1ed086</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>short_description</element><position>20</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>ef6f5e76079d01101590f19d7c1ed086</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>description</element><position>21</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>636f5e76079d01101590f19d7c1ed087</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>cxs_table_search.xml</element><position>22</position><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:41:24</sys_created_on><sys_id>e36f5e76079d01101590f19d7c1ed087</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter display_value="Contextual Search Results">11eb1622eb1121003623666cd206fe56</sys_ui_formatter><sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="Default view">bf1d96e3c0a801640190725e63f8ac80</sys_ui_section><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:41:24</sys_updated_on><sys_user/><type>formatter</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>incident</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>fred.luddy</sys_created_by><sys_created_on>2004-07-14 19:25:13</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>bf1d96e3c0a801640190725e63f8ac80</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident</sys_name><sys_overrides/><sys_package display_value="Knowledge Management V3" source="com.snc.knowledge3">5265766561940110c0a0df2cd71e2dba</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_bf1d96e3c0a801640190725e63f8ac80</sys_update_name><sys_updated_by>system_bootstrap</sys_updated_by><sys_updated_on>2004-12-13 18:05:34</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>1354333127</payload_hash>
+<remote_update_set display_value="[30/01/22 - 20h15] tabela-evento-e-incidente">f65b47c3071101101590f19d7c1ed094</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>vimartin</sys_created_by>
+<sys_created_on>2022-01-31 21:31:48</sys_created_on>
+<sys_id>f65b0387075101101590f19d7c1ed02f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17ead5d60900000001</sys_recorded_at>
+<sys_updated_by>vimartin</sys_updated_by>
+<sys_updated_on>2022-01-31 21:31:48</sys_updated_on>
+<table>incident</table>
+<target_name>Incident</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>eb6f5e76f79d0110de7a4f9e8f9f6489</update_guid>
+<update_guid_history>eb6f5e76f79d0110de7a4f9e8f9f6489:1354333127,276f5676cc9d01102739675fa1d59094:-1481541142</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_8d299a32079d01101590f19d7c1ed02c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><caller_access/><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>Eventos</label><live_feed_enabled>false</live_feed_enabled><name>u_eventos</name><number_ref display_value="EVT">38695e32079d01101590f19d7c1ed017</number_ref><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class display_value="Task" name="task">f461f26961100110c0a0df2cd71e2df4</super_class><sys_class_code/><sys_class_name>sys_db_object</sys_class_name><sys_class_path/><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:14:59</sys_created_on><sys_id>8d299a32079d01101590f19d7c1ed02c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Eventos</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_8d299a32079d01101590f19d7c1ed02c</sys_update_name><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:15:01</sys_updated_on><update_access>false</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<payload_hash>-1561357899</payload_hash>
+<remote_update_set display_value="[30/01/22 - 20h15] tabela-evento-e-incidente">f65b47c3071101101590f19d7c1ed094</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>vimartin</sys_created_by>
+<sys_created_on>2022-01-31 21:31:48</sys_created_on>
+<sys_id>f65b47c3071101101590f19d7c1ed095</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17ead45361b0000001</sys_recorded_at>
+<sys_updated_by>vimartin</sys_updated_by>
+<sys_updated_on>2022-01-31 21:31:48</sys_updated_on>
+<table>u_eventos</table>
+<target_name>Eventos</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_guid>74695e329e9d0110c7b99548b098391b</update_guid>
+<update_guid_history>74695e329e9d0110c7b99548b098391b:-1561357899,78695e32619d01109d3221b5d7e87c16:355776264</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_application_a0691afa075d01101590f19d7c1ed048</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>eventos</name><order>100</order><roles/><sys_class_name>sys_app_application</sys_class_name><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-01-30 23:14:59</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a0691afa075d01101590f19d7c1ed048</sys_id><sys_mod_count>0</sys_mod_count><sys_name>eventos</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_application_a0691afa075d01101590f19d7c1ed048</sys_update_name><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-01-30 23:14:59</sys_updated_on><title>eventos</title><view_name/></sys_app_application></record_update>]]></payload>
+<payload_hash>-1003864198</payload_hash>
+<remote_update_set display_value="[30/01/22 - 20h15] tabela-evento-e-incidente">f65b47c3071101101590f19d7c1ed094</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>vimartin</sys_created_by>
+<sys_created_on>2022-01-31 21:31:48</sys_created_on>
+<sys_id>fa5b47c3071101101590f19d7c1ed094</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17ead4530ba0000001</sys_recorded_at>
+<sys_updated_by>vimartin</sys_updated_by>
+<sys_updated_on>2022-01-31 21:31:48</sys_updated_on>
+<table/>
+<target_name>eventos</target_name>
+<type>Application Menu</type>
+<update_domain>global</update_domain>
+<update_guid>24691e32589d0110a93788228fc6b7f9</update_guid>
+<update_guid_history>24691e32589d0110a93788228fc6b7f9:-1003864198</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

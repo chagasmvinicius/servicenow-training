@@ -1,0 +1,14 @@
+Especificação da tabela de eventos com funcionalidade de criação automática de incidente:
+
+Objetivo: 
+Com essa demanda busquei criar uma tabela para a criação de protocolos de alerta/eventos. Teoricamente um evento deve ser um alerta em um sistema que
+indica que há algo erro no sistema, mas ainda não é configurado um erro. Por conta disso, criei a tabela, que irá gerar protocolos com o prefixo "EVT"
+e, em cada protocolo, será possível criar um incidente com os dados listados no evento.
+Para essa funcionalidade foi criada uma UI action que, a partir de um GlideRecord, criar um incidente.
+
+=========================================== RECURSOS TÉCNICOS ===========================================
+|_______________________________________________________________________________________________________|
+|                         Recurso                           |                    Arquivo                |
+˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+| [UI action] "Criar incidente"                             |         ./ui-action-criar-inc.js          |
+˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
