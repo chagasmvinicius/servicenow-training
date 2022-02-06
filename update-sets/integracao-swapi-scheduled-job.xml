@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2022-02-06 21:20:23">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>[06/02/22] integracao-swapi-scheduled-job</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>06c08641072181101590f19d7c1ed094</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>vimartin</sys_created_by>
+<sys_created_on>2022-02-06 21:20:22</sys_created_on>
+<sys_id>4a420e41072181101590f19d7c1ed06f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>vimartin</sys_updated_by>
+<sys_updated_on>2022-02-06 21:20:22</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sysauto_script_87338db4076141101590f19d7c1ed035</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sysauto_script"&gt;&lt;sysauto_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;business_calendar/&gt;&lt;condition/&gt;&lt;conditional&gt;false&lt;/conditional&gt;&lt;entered_time/&gt;&lt;name&gt;Integração SWAPI&lt;/name&gt;&lt;offset/&gt;&lt;offset_type&gt;0&lt;/offset_type&gt;&lt;run_as display_value="Vinicius Chagas"&gt;6816f79cc0a8016401c5a33be04be441&lt;/run_as&gt;&lt;run_as_tz/&gt;&lt;run_dayofmonth&gt;1&lt;/run_dayofmonth&gt;&lt;run_dayofweek&gt;1&lt;/run_dayofweek&gt;&lt;run_period/&gt;&lt;run_start&gt;2022-02-05 22:06:26&lt;/run_start&gt;&lt;run_time&gt;1970-01-01 22:11:00&lt;/run_time&gt;&lt;run_type&gt;daily&lt;/run_type&gt;&lt;script&gt;&lt;![CDATA[try {
+    var canCountinue = true;
+    var response, httpStatusCode, log;
+    var request = new sn_ws.RESTMessageV2();
+    var endpoint = request.setEndpoint('https://swapi.dev/api/starships/');
+    request.setHttpMethod('get');
+
+    while (canCountinue) {
+        response = request.execute();
+        httpStatusCode = response.getStatusCode();
+        responseBody = response.haveError() ? response.getErrorMessage() : JSON.parse(response.getBody());
+        var insereNaves = new GlideRecord('u_starships');
+        insereNaves.initialize();
+        responseBody.results.forEach(function(starship) {
+            if (!insereNaves.get('u_name', starship.name)) {
+                for (i in starship) {
+                    insereNaves.setValue('u_' + i, starship[i]);
+                }
+                insereNaves.insert();
+            }
+        });
+        responseBody.next ? endpoint = request.setEndpoint(responseBody.next) : canCountinue = false;
+        log = JSON.stringify({
+            name: 'Integração SWAPI (Scheduled Job)',
+            action: 'GET (' + httpStatusCode + ') :' + responseBody.next
+        });
+        gs.info(log);
+    }
+} catch (e) {
+    var error = e.getMessage();
+    gs.info(error);
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sysauto_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;vimartin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-02-05 22:08:05&lt;/sys_created_on&gt;&lt;sys_id&gt;87338db4076141101590f19d7c1ed035&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Integração SWAPI&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysauto_script_87338db4076141101590f19d7c1ed035&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;vimartin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-02-05 22:09:23&lt;/sys_updated_on&gt;&lt;time_zone/&gt;&lt;upgrade_safe&gt;false&lt;/upgrade_safe&gt;&lt;/sysauto_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1032051350</payload_hash>
+<remote_update_set display_value="[06/02/22] integracao-swapi-scheduled-job">4a420e41072181101590f19d7c1ed06f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>vimartin</sys_created_by>
+<sys_created_on>2022-02-06 21:20:22</sys_created_on>
+<sys_id>0e420e41072181101590f19d7c1ed06f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17ed0e497200000001</sys_recorded_at>
+<sys_updated_by>vimartin</sys_updated_by>
+<sys_updated_on>2022-02-06 21:20:22</sys_updated_on>
+<table/>
+<target_name>Integração SWAPI</target_name>
+<type>Scheduled Script Execution</type>
+<update_domain>global</update_domain>
+<update_guid>cf318e41be218110a5698a6ec63e414f</update_guid>
+<update_guid_history>cf318e41be218110a5698a6ec63e414f:-1032051350</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_02145318072101101590f19d7c1ed00b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><caller_access/><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>true</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>Starships</label><live_feed_enabled>false</live_feed_enabled><name>u_starships</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class/><sys_class_code/><sys_class_name>sys_db_object</sys_class_name><sys_class_path/><sys_created_by>vimartin</sys_created_by><sys_created_on>2022-02-04 19:27:00</sys_created_on><sys_id>02145318072101101590f19d7c1ed00b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Starships</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_02145318072101101590f19d7c1ed00b</sys_update_name><sys_updated_by>vimartin</sys_updated_by><sys_updated_on>2022-02-04 19:27:00</sys_updated_on><update_access>false</update_access><user_role display_value="u_starships_user" name="u_starships_user">0925db18072101101590f19d7c1ed001</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<payload_hash>-1711536129</payload_hash>
+<remote_update_set display_value="[06/02/22] integracao-swapi-scheduled-job">4a420e41072181101590f19d7c1ed06f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>vimartin</sys_created_by>
+<sys_created_on>2022-02-06 21:20:22</sys_created_on>
+<sys_id>ce420e41072181101590f19d7c1ed06f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17ed0e428710000001</sys_recorded_at>
+<sys_updated_by>vimartin</sys_updated_by>
+<sys_updated_on>2022-02-06 21:20:22</sys_updated_on>
+<table>u_starships</table>
+<target_name>Starships</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_guid>cc21c2cd0aed4110b6120b9056ad71ea</update_guid>
+<update_guid_history>cc21c2cd0aed4110b6120b9056ad71ea:-1711536129,2625df189e210110f6fae944c42777e3:-1711536129</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

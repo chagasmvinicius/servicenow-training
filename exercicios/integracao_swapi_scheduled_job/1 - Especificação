@@ -1,0 +1,13 @@
+Especificação da integração via Scheduled Job para integração com o SWAPI (https://swapi.dev/):
+
+Objetivo: 
+Criação de um scheduled job que rodará diariamente para integrar com a SWAPI para puxar os dados de Starships e inseri-los na tabela "u_starships".
+Tabela também criada nesse exercício. O script popula cada campo da tabela com a informação do cada parâmetro do payload da resposta da requisição à API.
+
+=========================================== RECURSOS TÉCNICOS ===========================================
+|_______________________________________________________________________________________________________|
+|                         Recurso                           |                    Arquivo                |
+˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+| [Scheduled Job] "Integração SWAPI"                        |  ./scheduled_job_swapi.js                 |
+| [Table] "u_starships"                                     |  N/A                                      |
+˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
