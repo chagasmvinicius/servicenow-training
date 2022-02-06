@@ -6,5 +6,8 @@
 | [23/01/22 - 19h15] scripted-rest-api-fieldserviceprotocols  |  ./scripted-rest-api-fieldserviceprotocols.xml |
 | [26/01/22 - 09h17] record-producer-incident                 |  ./record-producer-incident.xml                |
 | [29/01/22 - 08h30] inbound-action-incident                  |  ./inbound-action-incident.xml                 |
-| [30/01/22 - 20h15] tabela-evento-e-incidente                |  ./tabela-evento-e-incidente.xml
+| [30/01/22 - 20h15] tabela-evento-e-incidente                |  ./tabela-evento-e-incidente.xml               |
+| [06/02/22] integracao-csv-sftp                              |  ./integracao-csv-sftp.xml                     |
 ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+
+

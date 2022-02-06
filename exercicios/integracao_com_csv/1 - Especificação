@@ -1,0 +1,24 @@
+Especificação da integração entre um servidor para puxar arquivos CSV e alimentação de tabelas ServiceNow:
+
+Objetivo: 
+1) Criação de um *Data Source* SFTP (sys_data_source) para estabelecer conexão com o arquivo CSV hospedado em um servidor específico;
+2) Criação de um *Transform Map* (sys_transform_map) para mapear o de-para entre o arquivo CSV e a tabela no ServiceNow e execução da transferência dos dados;
+3) Criação de um *Scheduled Data Import* (scheduled_import_set) com vínculo com o Data Source e, consequentemente, com o Transform Map para criar um cronograma de execução
+automática do Data Source e Transform Map.
+
+Obs.: O Scheduled Data Import possui um script (pre_script_bool), que é executado antes do Scheduled Data Import rodar, que troca o File Path do Data Source.
+Fiz isso porque o nome do arquivo irá mudar de acordo com a data. O script puxa a data atual e coloca no formato "aaaammdd". Após formatar, troca o valor no
+campo (file_path) do Data Source.
+
+=========================================== RECURSOS TÉCNICOS ===========================================
+|_______________________________________________________________________________________________________|
+|                         Recurso                           |                    Arquivo                |
+˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+| [Data Source] "SFTP Flexera - Contratos"                  |  ./data_source_contratos.js               |
+| [Transform Map] "TM: Contratos Flexera"                   |  N/A                                      |
+| [Scheduled Data Import] pre_script_bool                   |  ./scheduled_data_import_script.js        |
+˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+
+Link para verificar a execução:
+1) Schedule (sys_trigger): https://dev96986.service-now.com/nav_to.do?uri=%2Fsys_trigger_list.do%3Fsysparm_query%3DnameLIKEflexera%26sysparm_first_row%3D1%26sysparm_view%3D
+2) Tabela de contratos (ast_contract): https://dev96986.service-now.com/ast_contract_list.do?sysparm_query=&sysparm_first_row=1&sysparm_view=

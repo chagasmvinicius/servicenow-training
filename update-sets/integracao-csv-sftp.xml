@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2022-02-06 21:00:39">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>[06/02/22] integracao-csv-sftp</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>c02db98d07ed41101590f19d7c1ed0f0</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>vimartin</sys_created_by>
+<sys_created_on>2022-02-06 21:00:38</sys_created_on>
+<sys_id>3ccdf1cd07ed41101590f19d7c1ed032</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>vimartin</sys_updated_by>
+<sys_updated_on>2022-02-06 21:00:38</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_data_source_dea7954107ad41101590f19d7c1ed0f7</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_data_source"&gt;&lt;sys_data_source action="INSERT_OR_UPDATE"&gt;&lt;batch_size&gt;1000&lt;/batch_size&gt;&lt;category/&gt;&lt;connection_timeout&gt;0&lt;/connection_timeout&gt;&lt;connection_url&gt;sftp://flexera:${scp_password}@200.208.24.72:22/%2FsrtFtpData/JB-2K3-FTP-P01/flexera/10033_20220203.csv&lt;/connection_url&gt;&lt;connection_url_parameters/&gt;&lt;csv_delimiter&gt;,&lt;/csv_delimiter&gt;&lt;data_in_single_column&gt;false&lt;/data_in_single_column&gt;&lt;data_loader&gt;&lt;![CDATA[(function loadData(import_set_table) {
+
+	// Add your code here to insert data to import_set_table
+
+})(import_set_table);]]&gt;&lt;/data_loader&gt;&lt;database_name/&gt;&lt;database_port/&gt;&lt;discard_arrays&gt;true&lt;/discard_arrays&gt;&lt;expand_node_children&gt;false&lt;/expand_node_children&gt;&lt;file_path&gt;/srtFtpData/JB-2K3-FTP-P01/flexera/10033_20220203.csv&lt;/file_path&gt;&lt;file_retrieval_method&gt;SFTP&lt;/file_retrieval_method&gt;&lt;format&gt;CSV&lt;/format&gt;&lt;glide_keystore&gt;false&lt;/glide_keystore&gt;&lt;header_row&gt;0&lt;/header_row&gt;&lt;import_set_table_label&gt;csv_flexera_contratos&lt;/import_set_table_label&gt;&lt;import_set_table_name&gt;u_csv_flexera_contratos&lt;/import_set_table_name&gt;&lt;instance_name/&gt;&lt;jdbc_password/&gt;&lt;jdbc_server/&gt;&lt;jdbc_user_name/&gt;&lt;jpath_root_node/&gt;&lt;last_run_database_field/&gt;&lt;last_run_datetime/&gt;&lt;last_success_import_time/&gt;&lt;ldap_target/&gt;&lt;ldapprobe_result_set_rows&gt;200&lt;/ldapprobe_result_set_rows&gt;&lt;limit/&gt;&lt;maximum_rows/&gt;&lt;mid_server/&gt;&lt;name&gt;SFTP Flexera - Contratos&lt;/name&gt;&lt;offset&gt;0&lt;/offset&gt;&lt;oracle_port&gt;1521&lt;/oracle_port&gt;&lt;oracle_sid&gt;orcl&lt;/oracle_sid&gt;&lt;parsing_script&gt;&lt;![CDATA[// The input value can be accessed through the variables named "line", "lineNumber" and "result"
+// The function uses result variable to return parse result back. 
+(function(line,lineNumber,result) {
+	// add code here
+})(line,lineNumber,result);]]&gt;&lt;/parsing_script&gt;&lt;properties/&gt;&lt;query&gt;All Rows from Table&lt;/query&gt;&lt;query_timeout&gt;0&lt;/query_timeout&gt;&lt;request_action/&gt;&lt;scp_authentication&gt;Username and Password&lt;/scp_authentication&gt;&lt;scp_password&gt;9jR9uCR2yWEPNWGUytwd9Q+XtbB7S1mD&lt;/scp_password&gt;&lt;scp_port&gt;22&lt;/scp_port&gt;&lt;scp_server&gt;200.208.24.72&lt;/scp_server&gt;&lt;scp_user_name&gt;flexera&lt;/scp_user_name&gt;&lt;sheet_number&gt;0&lt;/sheet_number&gt;&lt;sql_statement/&gt;&lt;ssh_keyfile_path/&gt;&lt;support_pagination&gt;false&lt;/support_pagination&gt;&lt;sys_class_name&gt;sys_data_source&lt;/sys_class_name&gt;&lt;sys_created_by&gt;vimartin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-02-06 18:15:04&lt;/sys_created_on&gt;&lt;sys_id&gt;dea7954107ad41101590f19d7c1ed0f7&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;SFTP Flexera - Contratos&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_data_source_dea7954107ad41101590f19d7c1ed0f7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;vimartin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-02-06 20:15:12&lt;/sys_updated_on&gt;&lt;table_name/&gt;&lt;type&gt;File&lt;/type&gt;&lt;u_codigo/&gt;&lt;use_batch_import&gt;false&lt;/use_batch_import&gt;&lt;use_integrated_authentication&gt;false&lt;/use_integrated_authentication&gt;&lt;use_last_run_datetime&gt;false&lt;/use_last_run_datetime&gt;&lt;xpath_root_node/&gt;&lt;zipped&gt;false&lt;/zipped&gt;&lt;/sys_data_source&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-827541085</payload_hash>
+<remote_update_set display_value="[06/02/22] integracao-csv-sftp">3ccdf1cd07ed41101590f19d7c1ed032</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>vimartin</sys_created_by>
+<sys_created_on>2022-02-06 21:00:39</sys_created_on>
+<sys_id>09cdf1cd07ed41101590f19d7c1ed033</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17ed0d622fd0000001</sys_recorded_at>
+<sys_updated_by>vimartin</sys_updated_by>
+<sys_updated_on>2022-02-06 21:00:39</sys_updated_on>
+<table/>
+<target_name>SFTP Flexera - Contratos</target_name>
+<type>Data Source</type>
+<update_domain>global</update_domain>
+<update_guid>779d31cd99ed4110c26fd51944ff2576</update_guid>
+<update_guid_history>779d31cd99ed4110c26fd51944ff2576:-827541085,5f5335c59fed41105b0c716f9849ed2e:-827541085,f50179454eed411065deb5537a7e2fa9:-1999653309,0280358159ed411094be67208a936d6c:-827541085,957ce18142ed4110597badf2f248d973:-1999653309,eaf9e98da1ad4110ad1c01f0d8f395c4:-827541085,e4b96189b6ad4110b6d36f7fd162d68a:-1999653309,13d02149efad411017c7e2c65ced9e3e:-1611751541,63d7dd411fad411068418896897a2ce3:-1809333525</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>scheduled_import_set_e87965cd07ad41101590f19d7c1ed056</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="scheduled_import_set"&gt;&lt;scheduled_import_set action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;business_calendar/&gt;&lt;concurrent_import&gt;false&lt;/concurrent_import&gt;&lt;condition/&gt;&lt;conditional&gt;false&lt;/conditional&gt;&lt;data_source display_value="SFTP Flexera - Contratos"&gt;dea7954107ad41101590f19d7c1ed0f7&lt;/data_source&gt;&lt;entered_time/&gt;&lt;map/&gt;&lt;name&gt;Run SFTP Flexera - Contratos&lt;/name&gt;&lt;offset/&gt;&lt;offset_type&gt;0&lt;/offset_type&gt;&lt;order/&gt;&lt;parent/&gt;&lt;partition_method&gt;roundRobin&lt;/partition_method&gt;&lt;partition_script&gt;&lt;![CDATA[(function partitionHash(import_set_row) {
+
+	// Add your code here
+	
+	// eg:
+	// return import_set_row.u_important_category;
+	// This would ensure all rows with the same 'u_important_category' value will be in the same Import Set.
+
+	 return import_set_row.sys_import_row;
+
+})(import_set_row);]]&gt;&lt;/partition_script&gt;&lt;partition_size/&gt;&lt;post_script/&gt;&lt;post_script_bool&gt;false&lt;/post_script_bool&gt;&lt;pre_script&gt;&lt;![CDATA[// Formatação do sufixo dos arquivos CSV:
+
+var day = gs.nowDateTime().split('/')[0];
+var month = gs.nowDateTime().split('/')[1];
+var year = gs.nowDateTime().split('/')[2].split(' ')[0];
+var formattedDate = year.concat(month, day);
+var newFilePath = '/srtFtpData/JB-2K3-FTP-P01/flexera/10033_' + formattedDate.toString() + '.csv';
+
+// Atualização do sufixo no Data Source "SFTP Flexera - Contratos":
+
+var searchDataSource = new GlideRecord('sys_data_source');
+searchDataSource.addQuery('sys_id', 'dea7954107ad41101590f19d7c1ed0f7');
+searchDataSource.setLimit(1);
+searchDataSource.query();
+if (searchDataSource.next()) {
+    searchDataSource.setValue('file_path', newFilePath);
+}
+searchDataSource.update();]]&gt;&lt;/pre_script&gt;&lt;pre_script_bool&gt;true&lt;/pre_script_bool&gt;&lt;run_as display_value="Vinicius Chagas"&gt;6816f79cc0a8016401c5a33be04be441&lt;/run_as&gt;&lt;run_as_tz/&gt;&lt;run_dayofmonth&gt;1&lt;/run_dayofmonth&gt;&lt;run_dayofweek&gt;1&lt;/run_dayofweek&gt;&lt;run_period/&gt;&lt;run_start&gt;2022-02-06 19:31:53&lt;/run_start&gt;&lt;run_time&gt;1970-01-01 15:00:00&lt;/run_time&gt;&lt;run_type&gt;daily&lt;/run_type&gt;&lt;synchronize_inserts&gt;true&lt;/synchronize_inserts&gt;&lt;sys_class_name&gt;scheduled_import_set&lt;/sys_class_name&gt;&lt;sys_created_by&gt;vimartin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-02-06 19:36:23&lt;/sys_created_on&gt;&lt;sys_id&gt;e87965cd07ad41101590f19d7c1ed056&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Run SFTP Flexera - Contratos&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;scheduled_import_set_e87965cd07ad41101590f19d7c1ed056&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;vimartin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-02-06 20:55:09&lt;/sys_updated_on&gt;&lt;time_zone/&gt;&lt;upgrade_safe&gt;false&lt;/upgrade_safe&gt;&lt;/scheduled_import_set&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-33964260</payload_hash>
+<remote_update_set display_value="[06/02/22] integracao-csv-sftp">3ccdf1cd07ed41101590f19d7c1ed032</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>vimartin</sys_created_by>
+<sys_created_on>2022-02-06 21:00:38</sys_created_on>
+<sys_id>30cdf1cd07ed41101590f19d7c1ed033</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17ed0d65a7c0000001</sys_recorded_at>
+<sys_updated_by>vimartin</sys_updated_by>
+<sys_updated_on>2022-02-06 21:00:38</sys_updated_on>
+<table/>
+<target_name>Run SFTP Flexera - Contratos</target_name>
+<type>Scheduled Data Import</type>
+<update_domain>global</update_domain>
+<update_guid>5badf18d84ed4110f2abb7faa1f6c22d</update_guid>
+<update_guid_history>5badf18d84ed4110f2abb7faa1f6c22d:-33964260,ec8cb18dc7ed4110f363cb878b446bfe:-33964260,c254b5c53ded4110993dfe046beee83d:-996687728,c56371c58ced41106e13b6b905e35911:565247600,c8df65c151ed4110af65b0a5c2ceb137:-811965386,be7aa10184ed411010ddeb06d8d8cc4c:-166926831</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_transform_map_f8f7518107ad41101590f19d7c1ed05c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_transform_map"&gt;&lt;sys_transform_map action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;copy_empty_fields&gt;false&lt;/copy_empty_fields&gt;&lt;create_new_record_on_empty_coalesce_fields&gt;false&lt;/create_new_record_on_empty_coalesce_fields&gt;&lt;enforce_mandatory_fields&gt;No&lt;/enforce_mandatory_fields&gt;&lt;name&gt;TM: Contratos Flexera&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;run_business_rules&gt;true&lt;/run_business_rules&gt;&lt;run_script&gt;false&lt;/run_script&gt;&lt;script&gt;&lt;![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]&gt;&lt;/script&gt;&lt;source_table&gt;u_csv_flexera_contratos&lt;/source_table&gt;&lt;sys_class_name&gt;sys_transform_map&lt;/sys_class_name&gt;&lt;sys_created_by&gt;vimartin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-02-06 18:15:57&lt;/sys_created_on&gt;&lt;sys_id&gt;f8f7518107ad41101590f19d7c1ed05c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;TM: Contratos Flexera&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_transform_map_f8f7518107ad41101590f19d7c1ed05c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;vimartin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-02-06 18:15:57&lt;/sys_updated_on&gt;&lt;target_table&gt;ast_contract&lt;/target_table&gt;&lt;/sys_transform_map&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1702503573</payload_hash>
+<remote_update_set display_value="[06/02/22] integracao-csv-sftp">3ccdf1cd07ed41101590f19d7c1ed032</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>vimartin</sys_created_by>
+<sys_created_on>2022-02-06 21:00:39</sys_created_on>
+<sys_id>c9cdf1cd07ed41101590f19d7c1ed033</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17ed0d63e050000001</sys_recorded_at>
+<sys_updated_by>vimartin</sys_updated_by>
+<sys_updated_on>2022-02-06 21:00:39</sys_updated_on>
+<table/>
+<target_name>TM: Contratos Flexera</target_name>
+<type>Table Transform Map</type>
+<update_domain>global</update_domain>
+<update_guid>65adf98ddfed4110e799c81aa456ad2c</update_guid>
+<update_guid_history>65adf98ddfed4110e799c81aa456ad2c:1702503573,6418118158ad4110e7151b3eeba12e0a:1702503573</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
