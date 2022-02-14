@@ -10,7 +10,7 @@ try {
     var contratos = new GlideRecord('ast_contract');
     contratos.addEncodedQuery('sys_created_onNOTONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()^sys_created_by=flexera_integration');
     contratos.query();
-    while (contratosD.next()) {
+    while (contratos.next()) {
         contratos.deleteRecord();
         countDelete++;
     }
