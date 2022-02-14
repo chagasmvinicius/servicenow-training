@@ -25,5 +25,5 @@ try {
 
     gs.info('[Run SFTP Flexera - Contratos] Data source atualizado com o file path: ' + newFilePath);
 } catch (e) {
-    gs.info('[Run SFTP Flexera - Contratos] Erro data source: ' + gs.getMessage(e));
+    gs.info('[Run SFTP Flexera - Contratos] Erro data source: ' + gs.getMessage(e) + ' | File path: ' + newFilePath);
 }
