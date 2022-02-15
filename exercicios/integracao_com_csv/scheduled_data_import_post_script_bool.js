@@ -3,10 +3,10 @@ Name: Run SFTP Flexera - Contratos (post_script_bool)
 Run as: flexera_integration
 */
 
-try {
-    // Exclusão dos registros criados anteriormente na tabela ast_contract:
+var countDelete = 0;
 
-    var countDelete = 0;
+try {
+    // Exclusão dos registros criados anteriormente na tabela ast_contract
     var contratos = new GlideRecord('ast_contract');
     contratos.addEncodedQuery('sys_created_onNOTONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()^sys_created_by=flexera_integration');
     contratos.query();

@@ -3,27 +3,16 @@ Name: Run SFTP Flexera - Contratos (pre_script_bool)
 Run as: flexera_integration
 */
 
+var gdt = new GlideDate().toString();
+var formattedDate = gdt.split('-');
+var newFilePath = '/srtFtpData/JB-2K3-FTP-P01/flexera/10033_' + formattedDate[0] + formattedDate[1] + formattedDate[2] + '.csv';
+var isetNumber = import_set.number;
+
 try {
-    // Formatação do sufixo dos arquivos CSV:
-
-    var day = gs.nowDateTime().split('/')[0];
-    var month = gs.nowDateTime().split('/')[1];
-    var year = gs.nowDateTime().split('/')[2].split(' ')[0];
-    var formattedDate = year.concat(month, day);
-    var newFilePath = '/srtFtpData/JB-2K3-FTP-P01/flexera/10033_' + formattedDate.toString() + '.csv';
-
-    // Atualização do sufixo no Data Source "SFTP Flexera - Contratos":
-
-    var searchDataSource = new GlideRecord('sys_data_source');
-    searchDataSource.addQuery('sys_id', 'dea7954107ad41101590f19d7c1ed0f7');
-    searchDataSource.setLimit(1);
-    searchDataSource.query();
-    if (searchDataSource.next()) {
-        searchDataSource.setValue('file_path', newFilePath);
-    }
-    searchDataSource.update();
-
-    gs.info('[Run SFTP Flexera - Contratos] Data source atualizado com o file path: ' + newFilePath);
+    // Atualização do file path do data source para receber o sufixo da data atual
+    data_source.file_path = newFilePath;
+    data_source.update();
+    gs.info('[Run SFTP Flexera - Contratos] Data source atualizado com o file: ' + newFilePath + ' (' + isetNumber + ')');
 } catch (e) {
-    gs.info('[Run SFTP Flexera - Contratos] Erro data source: ' + gs.getMessage(e) + ' | File path: ' + newFilePath);
+    gs.info('[Run SFTP Flexera - Contratos] Erro data source: ' + gs.getMessage(e) + ' (' + newFilePath + ')' + ' (' + isetNumber + ')');
 }
